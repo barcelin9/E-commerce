@@ -45,9 +45,8 @@ function App() {
     const [produtos, setProdutos] = useState([]);
 
     useEffect(() => {
-        // busca os produtos da API
-        fetch('https://ecommercesimulation.42web.io/backend/services/produtos.php')
-             .then(res => {
+    fetch('https://ecommercesimulation.42web.io/backend/services/produtos.php')
+        .then(res => {
             console.log("STATUS:", res.status);
             return res.json();
         })
@@ -56,7 +55,7 @@ function App() {
             setProdutos(data);
         })
         .catch(err => console.error('Erro ao buscar produtos:', err));
-    }, []);
+}, []);
 
     return (
         <div>
