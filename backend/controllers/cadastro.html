@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="../../frontend/style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Cadastre-se e aproveite <span class="cor-diferente">ofertas imperdíveis</span>!</h1>
+            <form action="cadastro.php" method="post">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="number" name="cpf" placeholder="CPF" required>
+                <div class="botoes">
+                    <button type="button" onclick="window.location.href='../../index.html'">Cancelar</button>
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        window.alert("Aviso importante: Este sistema é apenas uma simulação destinada a testes e demonstrações. Qualquer informação enviada aqui pode ser visível para desenvolvedores e não está protegida por processos de produção. Por favor, não insira senhas, números de cartão de crédito, CPF/RG ou qualquer outro dado real. Utilize informações fictícias (ex.: cartão 4111 1111 1111 1111, data de validade e CVV de teste) ou a base de dados de exemplos fornecida pela equipe de testes.")
+    </script>
+</body>
+
+</html>
