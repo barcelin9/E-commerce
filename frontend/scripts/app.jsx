@@ -46,7 +46,7 @@ function App() {
 
     useEffect(() => {
         // busca os produtos da API
-        fetch('http://localhost/E-commerce-20251114T112356Z-1-001/E-commerce/backend/api_json/produtos.php')
+        fetch('https://ecommercesimulation.42web.io/backend/api_json/produtos.php')
             .then(res => res.json())
             .then(data => setProdutos(data))
             .catch(err => console.error('Erro ao buscar produtos:', err));
