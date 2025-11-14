@@ -18,7 +18,7 @@ function Header() {
               </button>
             </li>
             <li>
-              <a href=""><i class="bi bi-house"></i></a>
+              <a href=""><i className="bi bi-house"></i></a>
             </li>
             <li>
                 <a href="../backend/controllers/contact.html">Contact</a>
