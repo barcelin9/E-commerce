@@ -45,7 +45,7 @@ function App() {
     const [produtos, setProdutos] = useState([]);
 
     useEffect(() => {
-    fetch('https://ecommercesimulation.42web.io/backend/services/produtos.php')
+    fetch('https://ecommercesimulation.42web.io/backend/services/produtos-cors.php')
         .then(res => {
             console.log("STATUS:", res.status);
             return res.json();
